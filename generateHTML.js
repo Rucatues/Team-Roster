@@ -16,8 +16,8 @@ function createManagerCard(manager) {
       <div class="card-content white-text">
         <span class="card-title">${manager.name}</span>
         <ul>
-          <li>${manager.ID}</li >
-          <li>E${manager.officeNumber}</li>
+          <li>ID: ${manager.ID}</li >
+          <li>Office Number: ${manager.officeNumber}</li>
         </ul >
       </div >
         <div class="card-action">
@@ -33,8 +33,8 @@ function createEngineerCard(engineer) {
       <div class="card-content white-text">
         <span class="card-title">${engineer.name}</span>
         <ul>
-          <li>${engineer.ID}</li >
-          <li>E${engineer.github}</li>
+          <li>ID: ${engineer.ID}</li >
+          <li>Github: <a href="github.com/${engineer.github}"</a></li>
         </ul >
       </div >
         <div class="card-action">
@@ -50,8 +50,8 @@ function createInternCard(intern) {
       <div class="card-content white-text">
         <span class="card-title">${intern.name}</span>
         <ul>
-          <li>${intern.ID}</li >
-          <li>E${engineer.school}</li>
+          <li>ID: ${intern.ID}</li >
+          <li>School: ${intern.school}</li>
         </ul >
       </div >
         <div class="card-action">
