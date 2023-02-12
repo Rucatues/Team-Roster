@@ -1,6 +1,10 @@
 const inquirer = require("inquirer");
+const Engineer = require("./lib/Engineer.js");
+const Intern = require("./lib/Intern.js");
+const Manager = require("./lib/Manager.js");
+const generateHTML = require("./generateHTML.js");
 
-console.log("File is linked.");
+let Employees = [];
 
 
 function init() {
@@ -27,7 +31,9 @@ function init() {
         },
     ])
         .then((data) => {
-            console.log(data);
+            // console.log(data);
+            const manager = new Manager(data.name, data.email, data.ID, data.officeNumber);
+            Employees.push(manager);
             menu();
         })
 }
@@ -81,7 +87,8 @@ function addEngineer() {
         },
     ])
         .then((data) => {
-            console.log(data);
+            const engineer = new Engineer(data.name, data.email, data.ID, data.github);
+            Employees.push(engineer);
             menu();
         })
 }
@@ -110,43 +117,18 @@ function addIntern() {
         },
     ])
         .then((data) => {
-            console.log(data);
+            const intern = new Intern(data.name, data.email, data.ID, data.school);
+            Employees.push(intern);
             menu();
         })
 }
 
 function finishTeam() {
     console.log('Thank you for using our application!');
-
+    console.log(Employees);
+    generateHTML(Employees);
     process.exit();
 }
 
 
 init();
-// inquirer.prompt([
-//     {
-//         type: 'input',
-//         message: 'What is the name of the employee?',
-//         name: 'name'
-//     },
-//     {
-//         type: 'input',
-//         message: 'What is the employee ID?',
-//         name: 'employeeID'
-//     },
-//     {
-//         type: 'input',
-//         message: 'What is the email address of the employee?',
-//         name: 'email'
-//     },
-//     {
-//         type: 'input',
-//         message: 'What is the office number of the employee?',
-//         name: 'officeNumber'
-//     },
-//     {
-//         type: 'input',
-//         message: 'What is the Github username of the employee?',
-//         name: 'github'
-//     }
-// ])
