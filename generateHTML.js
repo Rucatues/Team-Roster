@@ -25,6 +25,44 @@ function createManagerCard(manager) {
         </div>
     </div >
   </div > `
+};
+
+function createEngineerCard(engineer) {
+    return `<div class="col s3 m6">
+    <div class="card brown lighten-1">
+      <div class="card-content white-text">
+        <span class="card-title">${engineer.name}</span>
+        <ul>
+          <li>${engineer.ID}</li >
+          <li>E${engineer.github}</li>
+        </ul >
+      </div >
+        <div class="card-action">
+            <a href="mailto:${engineer.email}">Click here to Email</a>
+        </div>
+    </div >
+  </div > `
+};
+
+function createInternCard(intern) {
+    return `<div class="col s3 m6">
+    <div class="card brown lighten-1">
+      <div class="card-content white-text">
+        <span class="card-title">${intern.name}</span>
+        <ul>
+          <li>${intern.ID}</li >
+          <li>E${engineer.school}</li>
+        </ul >
+      </div >
+        <div class="card-action">
+            <a href="mailto:${engineer.email}">Click here to Email</a>
+        </div>
+    </div >
+  </div > `
 }
+
+function writeToFile() {
+    //add beginning of HTML + create card functions + end of HTML
+};
 
 module.exports = sortArray; 
