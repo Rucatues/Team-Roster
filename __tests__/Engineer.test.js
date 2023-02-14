@@ -1,4 +1,4 @@
-const Index = require(./index.js)
+const Engineer = require("../lib/Engineer.js");
 
 describe('Engineer', () => {
 
@@ -39,9 +39,10 @@ describe('Engineer', () => {
 
     describe('Initialize Github', () => {
         it('should set Github username properly', () => {
-            const github = 'fakeUserName;
+            const github = 'fakeUserName';
             const engineergithub = new Engineer(github);
 
             expect(engineergithub.github).toBe(github);
         });
     });
+});
