@@ -56,7 +56,7 @@ function createManagerCard(manager) {
   return `<div class="col s3 m6">
     <div class="card brown lighten-1">
       <div class="card-content white-text">
-        <span class="card-title">${manager.name}</span>
+        <span class="card-title">${manager.name} (Manager)</span>
         <ul>
           <li>ID: ${manager.ID}</li >
           <li>Office Number: ${manager.officeNumber}</li>
@@ -73,7 +73,7 @@ function createEngineerCard(engineer) {
   return `<div class="col s3 m6">
     <div class="card brown lighten-1">
       <div class="card-content white-text">
-        <span class="card-title">${engineer.name}</span>
+        <span class="card-title">${engineer.name} (Engineer)</span>
         <ul>
           <li>ID: ${engineer.ID}</li >
           <li>Github: <a href="github.com/${engineer.github}"</a></li>
@@ -90,7 +90,7 @@ function createInternCard(intern) {
   return `<div class="col s3 m6">
     <div class="card brown lighten-1">
       <div class="card-content white-text">
-        <span class="card-title">${intern.name}</span>
+        <span class="card-title">${intern.name} (Intern)</span>
         <ul>
           <li>ID: ${intern.ID}</li >
           <li>School: ${intern.school}</li>
