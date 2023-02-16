@@ -4,7 +4,6 @@ let managerArray = [];
 let engineerArray = [];
 let internArray = [];
 
-const innerText = generateHTML();
 
 function sortArray(array) {
   for (let i = 0; i < array.length; i++) {
@@ -19,6 +18,7 @@ function sortArray(array) {
     } else if (array[i].getRole() === 'Intern') {
       let intCard = createInternCard(array[i]);
       internArray.push(intCard);
+      console.log(internArray);
     }
   }
 };
@@ -103,7 +103,9 @@ function createInternCard(intern) {
   </div >`
 };
 
+
 function writeToFile() {
+  const innerText = generateHTML();
   fs.writeFile("./TeamRoster.html", innerText, (err) => {
     if (err)
       console.log(err);
