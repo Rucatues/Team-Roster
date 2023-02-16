@@ -127,6 +127,7 @@ function addIntern() {
 function finishTeam() {
     console.log('Thank you for using our application!');
     console.log(Employees);
+    generateHTML.sortArray(Employees);
     generateHTML.writeToFile();
     // process.exit(); removed this and WriteToFile function worked? 
 }
