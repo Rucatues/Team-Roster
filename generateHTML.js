@@ -76,7 +76,7 @@ function createEngineerCard(engineer) {
         <span class="card-title">${engineer.name} (Engineer)</span>
         <ul>
           <li>ID: ${engineer.ID}</li >
-          <li>Github: <a href="github.com/${engineer.github}"</a></li>
+          <li>Github: <a href="https://github.com/${engineer.github}">Click here to visit.</a></li>
         </ul >
       </div >
         <div class="card-action">
