@@ -41,9 +41,9 @@ function generateHTML() {
       <h1 class="blue-text col s12 white-text center-align">My Team</h1>
           </div>
           <div class="row">
-        ${managerArray}
-        ${engineerArray}
-        ${internArray}
+        ${managerArray.join('')}
+        ${engineerArray.join('')}
+        ${internArray.join('')}
   </div> 
   </div>
     <script src="/Users/kellymclain/bootcamp/Homework/Team-Profile-Generator/index.js"></script>
