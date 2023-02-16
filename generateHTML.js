@@ -1,3 +1,6 @@
+const index = require('./index.js');
+const fs = require('fs');
+
 function sortArray(array) {
   for (let i = 0; i < array.length; i++) {
     if (array[i].getRole() === 'Manager') {
@@ -58,11 +61,43 @@ function createInternCard(intern) {
             <a href="mailto:${intern.email}">Click here to Email</a>
         </div>
     </div >
-  </div > `
-}
-
-function writeToFile() {
-  //add beginning of HTML + create card functions + end of HTML
+  </div >`
 };
 
-module.exports = sortArray; 
+function generateHTML() {
+  // console.log("If this is displaying, the generateHTML function is working");
+  const testtext = "Does this show up?"
+  return testtext;
+  // return `<!DOCTYPE html>
+  // <html lang="en">
+  // <head>
+  //     <meta charset="UTF-8">
+  //     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  //     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  //     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  //     <link href="style.css" rel="stylesheet">
+  //     <title>Team Information</title>
+  // </head>
+  // <body>
+  //     <div class="container">
+  //         <div class="row blue-grey lighten-1">
+  //     <h1 class="blue-text col s12 white-text center-align">My Team</h1>
+  //         </div>
+  //         <div class="row">
+
+  // </div > `
+};
+
+const innerText = generateHTML();
+
+function writeToFile() {
+  fs.writeFile("./TeamRoster.html", innerText, (err) => {
+    if (err)
+      console.log(err);
+    else {
+      console.log("File written successfully");
+    }
+  });
+}
+
+module.exports = { generateHTML, writeToFile }; 

@@ -3,6 +3,7 @@ const Engineer = require("./lib/Engineer.js");
 const Intern = require("./lib/Intern.js");
 const Manager = require("./lib/Manager.js");
 const generateHTML = require("./generateHTML.js");
+const fs = require('fs');
 
 let Employees = [];
 
@@ -126,9 +127,14 @@ function addIntern() {
 function finishTeam() {
     console.log('Thank you for using our application!');
     console.log(Employees);
-    generateHTML(Employees);
+    generateHTML.writeToFile();
     process.exit();
 }
 
+module.exports = {
+    Employees,
+    finishTeam
+}
 
 init();
+
