@@ -128,7 +128,7 @@ function finishTeam() {
     console.log('Thank you for using our application!');
     console.log(Employees);
     generateHTML.writeToFile();
-    process.exit();
+    // process.exit(); removed this and WriteToFile function worked? 
 }
 
 module.exports = {

@@ -66,26 +66,24 @@ function createInternCard(intern) {
 
 function generateHTML() {
   // console.log("If this is displaying, the generateHTML function is working");
-  const testtext = "Does this show up?"
-  return testtext;
-  // return `<!DOCTYPE html>
-  // <html lang="en">
-  // <head>
-  //     <meta charset="UTF-8">
-  //     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  //     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  //     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  //     <link href="style.css" rel="stylesheet">
-  //     <title>Team Information</title>
-  // </head>
-  // <body>
-  //     <div class="container">
-  //         <div class="row blue-grey lighten-1">
-  //     <h1 class="blue-text col s12 white-text center-align">My Team</h1>
-  //         </div>
-  //         <div class="row">
+  return `<!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      <link href="style.css" rel="stylesheet">
+      <title>Team Information</title>
+  </head>
+  <body>
+      <div class="container">
+          <div class="row blue-grey lighten-1">
+      <h1 class="blue-text col s12 white-text center-align">My Team</h1>
+          </div>
+          <div class="row">
 
-  // </div > `
+  </div > `
 };
 
 const innerText = generateHTML();
