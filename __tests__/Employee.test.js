@@ -27,3 +27,42 @@ describe('Initialize employee ID', () => {
     });
 });
 
+describe('getName() method', () => {
+    it('should return the Employee name', () => {
+        const getName = new Employee("Harry", "Employee@fakeemail.com", 900);
+
+        expect(getName.getName()).toBe(
+            `Harry`
+        );
+    });
+});
+
+describe('getid() method', () => {
+    it('should return the Employee ID', () => {
+        const getid = new Employee("Harry", "Employee@fakeemail.com", 900);
+
+        expect(getid.getid()).toBe(
+            900
+        );
+    });
+});
+
+describe('getEmail() method', () => {
+    it('should return the Employee email', () => {
+        const getEmail = new Employee("Harry", "Employee@fakeemail.com", 900);
+
+        expect(getEmail.getEmail()).toBe(
+            "Employee@fakeemail.com"
+        );
+    });
+});
+
+describe('getRole() method', () => {
+    it('should return the Employee role', () => {
+        const getRole = new Employee("Harry", "Employee@fakeemail.com", 900);
+
+        expect(getRole.getRole()).toBe(
+            "Employee"
+        );
+    });
+});
