@@ -37,7 +37,7 @@ describe('Initialize intern school', () => {
 });
 
 describe('getSchool() method', () => {
-    it('should return the Employee school', () => {
+    it('should return the Intern school', () => {
         const getEmail = new Intern("Shea", "Shea@fakeemail.com", 802, "UT Austin");
 
         expect(getEmail.getEmail()).toBe(
@@ -47,7 +47,7 @@ describe('getSchool() method', () => {
 });
 
 describe('getRole() method', () => {
-    it('should return the Employee role', () => {
+    it('should return the Intern role', () => {
         const getRole = new Intern("Shea", "Shea@fakeemail.com", 802, "UT Austin");
 
         expect(getRole.getRole()).toBe(

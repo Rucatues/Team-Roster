@@ -37,7 +37,7 @@ describe('Initialize engineer Github', () => {
 });
 
 describe('getGithub() method', () => {
-    it('should return the Employee github', () => {
+    it('should return the Engineer github', () => {
         const getGithub = new Engineer("Jared", "Jared@fakeemail.com", 801, "JaredGithub");
 
         expect(getGithub.getGithub()).toBe(
@@ -47,7 +47,7 @@ describe('getGithub() method', () => {
 });
 
 describe('getRole() method', () => {
-    it('should return the Employee role', () => {
+    it('should return the Engineer role', () => {
         const getRole = new Engineer("Jared", "Jared@fakeemail.com", 801, "JaredGithub");
 
         expect(getRole.getRole()).toBe(

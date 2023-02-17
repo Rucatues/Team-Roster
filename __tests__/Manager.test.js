@@ -35,3 +35,13 @@ describe('Initialize manager office number', () => {
         expect(manager.officeNumber).toBe(managerOfficeNum);
     });
 });
+
+describe('getRole() method', () => {
+    it('should return the Manager role', () => {
+        const getRole = new Manager("Sally", "Sally@fakeemail.com", 800, 200);
+
+        expect(getRole.getRole()).toBe(
+            "Manager"
+        );
+    });
+});
