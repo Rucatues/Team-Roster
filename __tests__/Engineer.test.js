@@ -35,3 +35,23 @@ describe('Initialize engineer Github', () => {
         expect(engineer.github).toBe(engineerGithub);
     });
 });
+
+describe('getGithub() method', () => {
+    it('should return the Employee github', () => {
+        const getGithub = new Engineer("Jared", "Jared@fakeemail.com", 801, "JaredGithub");
+
+        expect(getGithub.getGithub()).toBe(
+            "JaredGithub"
+        );
+    });
+});
+
+describe('getRole() method', () => {
+    it('should return the Employee role', () => {
+        const getRole = new Engineer("Jared", "Jared@fakeemail.com", 801, "JaredGithub");
+
+        expect(getRole.getRole()).toBe(
+            "Engineer"
+        );
+    });
+});
