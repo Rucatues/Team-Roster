@@ -27,8 +27,8 @@ describe('Initialize engineer ID', () => {
 });
 });
 
-describe('Initialize engineer office number', () => {
-    it('should set office number properly', () => {
+describe('Initialize engineer Github', () => {
+    it('should set Github properly', () => {
         const engineerGithub = "JaredGithub");
     const engineer = new Engineer("Jared", "Jared@fakeemail.com", 801, engineerGithub);
 
