@@ -10,21 +10,17 @@ function sortArray(array) {
     if (array[i].getRole() === 'Manager') {
       let manCard = createManagerCard(array[i]);
       managerArray.push(manCard);
-      console.log(managerArray);
     } else if (array[i].getRole() === 'Engineer') {
       let engCard = createEngineerCard(array[i]);
       engineerArray.push(engCard);
-      console.log(engineerArray);
     } else if (array[i].getRole() === 'Intern') {
       let intCard = createInternCard(array[i]);
       internArray.push(intCard);
-      console.log(internArray);
     }
   }
 };
 
 function generateHTML() {
-  // console.log("If this is displaying, the generateHTML function is working");
   return `<!DOCTYPE html>
   <html lang="en">
   <head>
@@ -106,11 +102,11 @@ function createInternCard(intern) {
 
 function writeToFile() {
   const innerText = generateHTML();
-  fs.writeFile("./TeamRoster.html", innerText, (err) => {
+  fs.writeFile("./dist/TeamRoster.html", innerText, (err) => {
     if (err)
       console.log(err);
     else {
-      console.log("File written successfully");
+      console.log("File written successfully, check the dist folder for your HTML file");
     }
   });
 }
