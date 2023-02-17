@@ -1,48 +1,37 @@
-// const Engineer = require("../lib/Engineer.js");
+const Engineer = require("../lib/Engineer.js");
 
-// describe('Engineer', () => {
+describe('Initialize engineer name', () => {
+    it('should set name properly', () => {
+        const engineerName = "Jared";
+        const engineer = new Engineer(engineerName, "Jared@fakeemail.com", 801, "JaredGithub");
 
-//     describe('Instance', () => {
-//         it('should be an instance of Employee class', () => {
-//             const engineer = new Employee();
+        expect(engineer.name).toBe(engineerName);
+    });
+});
 
-//             expect(engineer).toBeInstanceOf(Employee);
-//         });
-//     });
+describe('Initialize engineer email', () => {
+    it('should set email properly', () => {
+        const engineerEmail = "Jared@fakeemail.com";
+        const engineer = new Engineer("Jared", engineerEmail, 801, "JaredGithub"));
 
-//     describe('Initialize name', () => {
-//         it('should set name properly', () => {
-//             const name = 'Test Engineer Name';
-//             const engineerName = new Engineer(name);
+    expect(engineer.email).toBe(engineerEmail);
+});
+});
 
-//             expect(engineerName.name).toBe(name);
-//         });
-//     });
+describe('Initialize engineer ID', () => {
+    it('should set ID properly', () => {
+        const engineerID = 800;
+        const engineer = new Engineer("Jared", "Jared@fakeemail.com", engineerID, "JaredGithub"));
 
-//     describe('Initialize email', () => {
-//         it('should set email properly', () => {
-//             const email = 'fakeemail@gmail.com';
-//             const engineerEmail = new Engineer(email);
+    expect(engineer.ID).toBe(engineerID);
+});
+});
 
-//             expect(engineerEmail.email).toBe(email);
-//         });
-//     });
+describe('Initialize engineer office number', () => {
+    it('should set office number properly', () => {
+        const engineerGithub = "JaredGithub");
+    const engineer = new Engineer("Jared", "Jared@fakeemail.com", 801, engineerGithub);
 
-//     describe('Initialize ID', () => {
-//         it('should set ID properly', () => {
-//             const id = '880';
-//             const engineerID = new Engineer(id);
-
-//             expect(engineerID.id).toBe(id);
-//         });
-//     });
-
-//     describe('Initialize Github', () => {
-//         it('should set Github username properly', () => {
-//             const github = 'fakeUserName';
-//             const engineergithub = new Engineer(github);
-
-//             expect(engineergithub.github).toBe(github);
-//         });
-//     });
-// });
+    expect(engineer.github).toBe(engineerGithub);
+});
+});
