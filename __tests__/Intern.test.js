@@ -35,3 +35,23 @@ describe('Initialize intern school', () => {
         expect(intern.school).toBe(internSchool);
     });
 });
+
+describe('getSchool() method', () => {
+    it('should return the Employee school', () => {
+        const getEmail = new Intern("Shea", "Shea@fakeemail.com", 802, "UT Austin");
+
+        expect(getEmail.getEmail()).toBe(
+            "Shea@fakeemail.com"
+        );
+    });
+});
+
+describe('getRole() method', () => {
+    it('should return the Employee role', () => {
+        const getRole = new Intern("Shea", "Shea@fakeemail.com", 802, "UT Austin");
+
+        expect(getRole.getRole()).toBe(
+            "Intern"
+        );
+    });
+});
