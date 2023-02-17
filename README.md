@@ -24,6 +24,11 @@ This application generates a HTML file based off of information received by the 
 
 ## Screenshots
 
+Here is an example of the prompted questions in the terminal: 
+
+![Terminal-Example](./src/ScreenshotofTerminal.png)  
+
+
 Here is an example of a generated HTML file after questions are answered:  
 
 ![HTML-Example](./src/screenshot11.png)  
@@ -35,10 +40,16 @@ Here is an example of a generated HTML file after questions are answered:
   
 `npm install inquirer`
 
-<!-- `npm install jest` -->
+To use Jest to run tests: 
+
+`npm install jest`
 
 ## Usage instrutions
 
 Run the following command in the root directory of your project. Answer the questions to generate a HTML file which will be saved under the "dist" folder:
   
 `node index.js`
+
+To run tests using Jest: 
+
+`npm test` 
