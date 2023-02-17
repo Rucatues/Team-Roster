@@ -16,7 +16,7 @@
 
 ## Description
 
-This application generates a HTML file based off of information received by the user in the terminal. A series of questions determine information about a team member that will be displayed on the page. 
+This application generates a HTML file based off of information received by the user in the terminal. A series of questions determine information about a team member that will be displayed on the page with specific details depending on the type of role. 
 
 ## Video Walkthrough
 
@@ -26,7 +26,7 @@ This application generates a HTML file based off of information received by the 
 
 Here is an example of a generated HTML file after questions are answered:  
 
-![HTML-Example](linktoscreenshot)  
+![HTML-Example](./src/screenshot11.png)  
 
 
 ## Installation
