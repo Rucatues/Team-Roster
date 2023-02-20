@@ -20,7 +20,7 @@ This application generates a HTML file based off of information received by the 
 
 ## Video Walkthrough
 
-[Click here](www.google.com) to view a video walkthrough of the README Genie. 
+[Click here](https://drive.google.com/file/d/12xuCP7RWiP0noMwff93vbW_KGs1l_DM6/view) to view a video walkthrough of the README Genie. 
 
 ## Screenshots
 
